@@ -1,6 +1,8 @@
 <section class="text-center">
     <h2 class="text-primary">Minhas Leituras</h2>
     <hr class="border border-primary border-2 opacity-50 w-25 mx-auto">
-
-    <app-livro [livro]="livros"></app-livro>
 </section>
+@for(genero of generos; track genero){
+
+    <app-genero-literario [genero]="genero"></app-genero-literario>
+}

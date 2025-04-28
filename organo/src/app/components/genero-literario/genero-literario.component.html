@@ -1,0 +1,19 @@
+<section class="text-center">
+    <h3 class="text-primary">{{genero().value}}</h3>
+    <hr class="border border-primary border-2 opacity-50 w-25 mx-auto">
+
+    <div class="d-flex">
+
+        @for( livro of genero().livros; track livro){
+            
+            <app-livro [livro]="livro" />
+        } @empty {
+            <img class="img-fluid" src="assets/img/sem-livros.png" alt="" srcset="">
+          }
+    </div>
+    
+</section>
+
+
+
+
