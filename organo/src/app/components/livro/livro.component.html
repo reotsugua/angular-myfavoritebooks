@@ -1,0 +1,12 @@
+<section class="card m-3 ms-5" style="width: 262px; min-height: 382px;">
+    <div class="card-header bg-success"></div>
+    
+    <a (click)="chanceFavorite()" href="#" class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" >
+        <i class="bi ms-auto me-2 mt-2 text-danger" [class]="livro.favorito? 'bi-heart-fill' : 'bi-heart' "></i>
+      </a>
+    <img class="my-auto mx-auto"  [src]="livro.imagem" [alt]="livro.titulo">
+    <div class="card-footer text-center"> 
+        <h2>{{livro.titulo}}</h2>
+        <h6>{{livro.autor}}</h6>
+    </div>
+</section>
